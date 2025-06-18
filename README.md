@@ -46,7 +46,16 @@
 7. CI/CD Pipelines: Automated pipelines for testing and deploying code changes
 
 ### Database Design Overview 
-#### The database design overview outlines how the database is stractured such as API, Users, Properties, Bookings, Reviews and Payments
+#### The database design overview outlines how the database is stractured such as User management, Property management, Bookings system, Review system, Data optimization and Payments processing
+1. User Management: Implement a secure system for user registration, authentication, and profile management
+2. Property Management: Develop features for property listing creation, updates, and retrieval
+3. Booking System: Create a booking mechanism for users to reserve properties and manage booking details
+4. Payment Processing: Integrate a payment system to handle transactions and record payment details
+5. Review System: Allow users to leave reviews and ratings for properties
+6. Data Optimization: Ensure efficient data retrieval and storage through database optimizations
+
+### Features Overview
+#### The features overview outlines the features of airbnb clone such as API documentation, Users, Property management, Booking system, Review system, Payment and Data optimization
 1. API documentation - OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration of application components
                      - Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data
                      - GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend application side
@@ -56,3 +65,44 @@
 5. Payment - this endpoint handle payment transactions of users related to bookings
 6. Review system - this endpoint post and manage reviews for properties as recommended by users
 7. Data optimization endpoint - has (a) Indexing: Implement indexes for fast retrieval of frequently accessed data by users, (b) Caching: Use caching strategies to reduce database load and improve performance by users
+
+### API Security Overview
+#### This section provide the importance of securing backend APIs which include:
+1. REST API: Detailed documentation available through the OpenAPI standard, including endpoints for users, properties, bookings, and payments
+2. GraphQL API: Provides a flexible query language for retrieving and manipulating data
+#### The major API to be used is REST API that will secure and safeguard endpoints of the application.
+1. Users
+
+- GET /users/ - List all users
+- POST /users/ - Create a new user
+- GET /users/{user_id}/ - Retrieve a specific user
+- PUT /users/{user_id}/ - Update a specific user
+- DELETE /users/{user_id}/ - Delete a specific user
+  
+2. Properties
+
+- GET /properties/ - List all properties
+- POST /properties/ - Create a new property
+- GET /properties/{property_id}/ - Retrieve a specific property
+- PUT /properties/{property_id}/ - Update a specific property
+- DELETE /properties/{property_id}/ - Delete a specific property
+
+3. Bookings
+
+- GET /bookings/ - List all bookings
+- POST /bookings/ - Create a new booking
+- GET /bookings/{booking_id}/ - Retrieve a specific booking
+- PUT /bookings/{booking_id}/ - Update a specific booking
+- DELETE /bookings/{booking_id}/ - Delete a specific booking
+
+4. Payments
+
+- POST /payments/ - Process a payment
+
+5. Reviews
+
+- GET /reviews/ - List all reviews
+- POST /reviews/ - Create a new review
+- GET /reviews/{review_id}/ - Retrieve a specific review
+- PUT /reviews/{review_id}/ - Update a specific review
+- DELETE /reviews/{review_id}/ - Delete a specific review
