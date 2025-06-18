@@ -33,3 +33,26 @@
 7. Quality Assurance (QA) Engineer- makes an application perform according to requirements, and spots functional and non-functional defects
 8. Test Automation Engineer- designs a test automation ecosystem, and writes and maintains test scripts for automated testing
 9. DevOps Engineer- facilitates the cooperation between development and operations team, and builds continous integration and continous delivery (CI/CD) pipelines for faster delivery 
+
+### Technology Stack Overview
+#### The tech stacks outlines the technology applied in creating and running the application
+#### These tech stacks include: Django, Django REST framework, PostgreSQL, GraphQL, Celery, Redis, Docker, and CI/CD
+1. Django: A high-level Python web framework used for building the RESTful API
+2. PostgreSQL: A powerful relational database used for data storage
+3. GraphQL: Allows for flexible and efficient querying of data
+4. Celery: For handling asynchronous tasks such as sending notifications or processing payments
+5. Redis: Used for caching and session management
+6. Docker: Containerization tool for consistent development and deployment environments
+7. CI/CD Pipelines: Automated pipelines for testing and deploying code changes
+
+### Database Design Overview 
+#### The database design overview outlines how the database is stractured such as API, Users, Properties, Bookings, Reviews and Payments
+1. API documentation - OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration
+                     - Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data
+                     - GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend
+2. Users - the users endpoint register new users, authenticate, and manage user profiles
+3. Property management - this endpoint create, update, retrieve, and delete property listings
+4. Booking system - this endpoint make, update, and manage bookings, including check-in and check-out details
+5. Payment - this endpoint handle payment transactions of users related to bookings
+6. Review system - this endpoint post and manage reviews for properties
+7. Data optimization endpoint - has (a) Indexing: Implement indexes for fast retrieval of frequently accessed data, (b) Caching: Use caching strategies to reduce database load and improve performance
