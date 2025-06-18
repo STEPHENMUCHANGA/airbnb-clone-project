@@ -47,12 +47,12 @@
 
 ### Database Design Overview 
 #### The database design overview outlines how the database is stractured such as API, Users, Properties, Bookings, Reviews and Payments
-1. API documentation - OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration
+1. API documentation - OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration of application components
                      - Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data
-                     - GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend
-2. Users - the users endpoint register new users, authenticate, and manage user profiles
-3. Property management - this endpoint create, update, retrieve, and delete property listings
-4. Booking system - this endpoint make, update, and manage bookings, including check-in and check-out details
+                     - GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend application side
+2. Users - the user endpoint register new users, authenticate, and manage user profiles to enable the bookings
+3. Property management - this endpoint create, update, retrieve, and delete property listings to be accessed by the users and enable bookings
+4. Booking system - this endpoint make, update, and manage bookings, including check-in and check-out details by the users
 5. Payment - this endpoint handle payment transactions of users related to bookings
-6. Review system - this endpoint post and manage reviews for properties
-7. Data optimization endpoint - has (a) Indexing: Implement indexes for fast retrieval of frequently accessed data, (b) Caching: Use caching strategies to reduce database load and improve performance
+6. Review system - this endpoint post and manage reviews for properties as recommended by users
+7. Data optimization endpoint - has (a) Indexing: Implement indexes for fast retrieval of frequently accessed data by users, (b) Caching: Use caching strategies to reduce database load and improve performance by users
