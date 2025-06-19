@@ -70,7 +70,7 @@
 #### This section provide the importance of securing backend APIs which include:
 1. REST API: Detailed documentation available through the OpenAPI standard, including endpoints for users, properties, bookings, and payments
 2. GraphQL API: Provides a flexible query language for retrieving and manipulating data
-#### The major API to be used is REST API that will secure and safeguard endpoints of the application.
+#### The major API to be used is REST API that will secure and safeguard endpoints of the application
 1. Users
 
 - GET /users/ - List all users
@@ -106,3 +106,29 @@
 - GET /reviews/{review_id}/ - Retrieve a specific review
 - PUT /reviews/{review_id}/ - Update a specific review
 - DELETE /reviews/{review_id}/ - Delete a specific review
+
+### CI/CD Pipeline Overview 
+#### The CI/CD pipeline enhances code building, testing, and deployment process
+- CI (continous Integration) - Automatically integrates code changes from multiple contributors into a shared repository several times a day where each integration triggers automated builds and tests
+- CD (continous deployment/delivery) - Automatically delivers tested code to production (deployment) or a staging environment (delivery) after passing quality checks
+
+#### Importance of CI/CD to software development process
+1. Faster Development Cycles: Code changes are tested and deployed automatically, enabling quicker releases
+
+2. Improved Code Quality: Automated testing ensures bugs are caught early in the development cycle
+
+3. Reduced Manual Errors: Automation removes human error from repetitive tasks like testing and deployment
+
+4. Better Collaboration: Teams can integrate and validate their code changes frequently, reducing conflicts
+
+5. Scalability and Consistency: Standardised deployment processes ensure consistent results across environments
+
+#### Typical CI/CD tool
+1. Git, GitHub, and GitLab - for version control
+2. GitHub Actions, Jenkins, GitLab CI/CD - for CI/CD automation
+3. Docker - for containarization
+4. Maven, npm, Webpack - for building tools
+5. Terraform - for infrastructure as code
+6. JUnit, Selenium, Pytest - for testing
+7. Prometheus, Grafana - for monitoring
+8. Kubernetes, Docker Swarm - for ochestration  
