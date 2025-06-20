@@ -54,7 +54,7 @@
 5. Review System: Allow users to leave reviews and ratings for properties
 6. Data Optimization: Ensure efficient data retrieval and storage through database optimizations
 
-### Features Overview
+### Feature Breakdown
 #### The features overview outlines the features of airbnb clone such as API documentation, Users, Property management, Booking system, Review system, Payment and Data optimization
 1. API documentation - OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration of application components
                      - Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data
