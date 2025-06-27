@@ -134,7 +134,6 @@
 8. Kubernetes, Docker Swarm - for ochestration  
 
 ### Define Entities and Relationships in ER Diagram
-### Requirements
 #### The entity relationship (ER) diagram: ![Entity-Relationship Diagram drawio](https://github.com/user-attachments/assets/0e75f071-6a7c-4166-9430-d7b5e609c895) 
 #### This enables the creation of an entity relationship (ER) diagram of the User, Payment, Booking, Property, Message, and Review entities in the database and their relationships as listed:
 - User ↔ Property
