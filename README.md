@@ -132,3 +132,37 @@
 6. JUnit, Selenium, Pytest - for testing
 7. Prometheus, Grafana - for monitoring
 8. Kubernetes, Docker Swarm - for ochestration  
+
+### Define Entities and Relationships in ER Diagram
+#### The entity relationship (ER) diagram: ![Entity-Relationship Diagram drawio](https://github.com/user-attachments/assets/0e75f071-6a7c-4166-9430-d7b5e609c895) 
+#### This enables the creation of an entity relationship (ER) diagram of the User, Payment, Booking, Property, Message, and Review entities in the database and their relationships as listed bellow:
+(a) User ↔ Property
+Relationship: One-to-Many
+Description: A single user (with role host) can create multiple properties.
+Foreign Key: Property.host_id → User.user_id
+(b) User ↔ Booking
+Relationship: One-to-Many
+Description: A user (typically a guest) can make many bookings.
+Foreign Key: Booking.user_id → User.user_id
+(c) Property ↔ Booking
+Relationship: One-to-Many
+Description: A property can have multiple bookings.
+Foreign Key: Booking.property_id → Property.property_id
+(d) Booking ↔ Payment
+Relationship: One-to-One (or One-to-Many if allowing partial payments)
+Description: Each booking has one payment record, assuming full payment at once.
+Foreign Key: Payment.booking_id → Booking.booking_id
+(e) User ↔ Review
+Relationship: One-to-Many
+Description: A user can write multiple reviews.
+Foreign Key: Review.user_id → User.user_id
+(f) Property ↔ Review
+Relationship: One-to-Many
+Description: A property can have multiple reviews written by different users.
+Foreign Key: Review.property_id → Property.property_id
+(g) User ↔ Message (Sender & Recipient)
+Relationship: One-to-Many (twice)
+Description: A user can send and receive multiple messages.
+Foreign Keys:
+  -Message.sender_id → User.user_id
+  -Message.recipient_id → User.user_id
